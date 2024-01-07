@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <link rel="stylesheet" href="switch.css">
+        <body>
+          <label class="switch">
+            <input type="checkbox" id="toggleSwitch">
+            <span class="slider round"></span>
+          </label>
+           <script>
+             document.getElementById('toggleSwitch').addEventListener('change', function() {
+              if (this.checked) {
+                document.body.style.backgroundColor = "#000";
+              } else {
+                document.body.style.backgroundColor = "#fff";
+              }
+            
+             });       
+           </script>
+        </body>
+    </head>
+ </html>
